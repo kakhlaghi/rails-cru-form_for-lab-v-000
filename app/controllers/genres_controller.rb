@@ -20,6 +20,6 @@ def new
   
   def update
     @genre = Genre.find(params[:id])
-    @genre.update(params.require(:genre).permit(:name, :bio))
+    @genre.update(params.require(:genre).permit(:name))
     redirect_to artist_path(@artist)
   end
