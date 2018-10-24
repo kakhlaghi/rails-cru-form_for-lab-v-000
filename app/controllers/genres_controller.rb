@@ -5,7 +5,7 @@ def new
   end
   
   def show
-    @Genre = Genre.find(params[:id])
+    @genre = Genre.find(params[:id])
   end
   
   def create
