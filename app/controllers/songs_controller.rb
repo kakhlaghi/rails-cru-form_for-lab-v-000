@@ -9,7 +9,7 @@ class SongsController < ApplicationController
   end
   
   def create
-    @song = Artist.new(params.require(:artist).permit(:name, :bio))
+    @song = Song.new(params.require(:song).permit(:name, :bio))
     @artist.save
     redirect_to artist_path(@artist)
   end
