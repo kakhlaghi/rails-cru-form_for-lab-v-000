@@ -13,7 +13,6 @@ describe 'navigate' do
   end
 
   it 'displays a link to the genre page' do 
-    binding.pry
     visit song_path(@song.id)
 
     expect(page).to have_link(@genre.name, href: genre_path(@genre))
