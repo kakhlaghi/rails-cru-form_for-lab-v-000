@@ -15,7 +15,7 @@ def new
   end
 
   def edit 
-    @artist = Artist.find(params[:id])
+    @artist = Genre.find(params[:id])
   end
   
   def update
